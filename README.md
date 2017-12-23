@@ -18,3 +18,7 @@ npm i -g etcdig
 $ etcdig --help
 ```
 
+## Configuration
+
+Options are parsed using yargs' [env prefixing](https://github.com/yargs/yargs/blob/HEAD/docs/api.md#envprefix) feature. This means that every option is also exposed as an environment variable having the `ETCDIG_` prefix.
+

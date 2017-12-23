@@ -3,19 +3,24 @@
   "version": "1.0.0",
   "description": "Discovery tool for etcd",
   "bin": {
-    "etcdig": "bin/etcdig.js"
+    "etcdig": "bin/etcdig.js",
+    "edg": "bin/etcdig.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tap test/*.js"
   },
   "author": "Joel Edwards <joeledwards@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "bluebird": "^3.5.1",
+    "chalk": "^2.3.0",
     "durations": "^3.2.1",
     "etcdjs": "^2.4.2",
-    "log-a-log": "^3.3.1",
     "ramda": "^0.25.0",
-    "tap": "^11.0.1",
+    "standard": "^10.0.3",
     "yargs": "^10.0.3"
+  },
+  "devDependencies": {
+    "tap": "^11.0.1"
   }
 }
