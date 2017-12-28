@@ -7,6 +7,9 @@
     "edg": "bin/etcdig.js"
   },
   "scripts": {
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "pretest": "standard",
     "test": "tap test/*.js"
   },
   "author": "Joel Edwards <joeledwards@gmail.com>",
@@ -18,10 +21,10 @@
     "durations": "^3.2.1",
     "etcdjs": "^2.4.2",
     "ramda": "^0.25.0",
-    "standard": "^10.0.3",
     "yargs": "^10.0.3"
   },
   "devDependencies": {
+    "standard": "^10.0.3",
     "tap": "^11.0.1"
   }
 }
